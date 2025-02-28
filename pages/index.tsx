@@ -1,18 +1,21 @@
+// pages/index.tsx
 import { Righteous } from "next/font/google";
 import { AnimatePresence } from "framer-motion";
 import React from "react";
 import Header from "@/components/Header";
 import BackgroundImage from "@/components/BackgroundImage";
 import Slides from "@/components/Slides";
-import Controls from "@/components/Controls";
+import SlideInfo from "@/components/SlideInfo";
+import Controls from "@/components/Controls"; // Import Controls component
 
 const inter = Righteous({
   subsets: ["latin"],
   weight: ["400"],
 });
-
 export type Data = {
   img: string;
+  title: string;
+  
 };
 
 export type CurrentSlideData = {
@@ -30,9 +33,7 @@ export default function Home() {
 
   return (
     <main
-      className={`${
-        inter.className
-      } relative min-h-screen select-none overflow-hidden text-white antialiased`}
+      className={`relative min-h-screen select-none overflow-hidden text-white antialiased ${inter.className}`}
     >
       <AnimatePresence>
         <BackgroundImage
@@ -43,7 +44,10 @@ export default function Home() {
           <Header />
           <div className="flex h-full w-full grid-cols-10 flex-col md:grid">
             <div className="col-span-4 mb-3 flex h-full flex-1 flex-col justify-end px-5 md:mb-0 md:justify-center md:px-10">
-              {/* Removed SlideInfo component as it is using removed data */}
+              <SlideInfo
+                transitionData={transitionData}
+                currentSlideData={currentSlideData}
+              />
             </div>
             <div className="col-span-6 flex h-full flex-1 flex-col justify-start p-4 md:justify-center md:p-10">
               <Slides data={data} />
@@ -67,46 +71,60 @@ export default function Home() {
 
 const sliderData = [
   {
-    img: "/1.jpg",
+    img: "/1.webp",
+    title: "Wings of Iguazu",
   },
   {
-    img: "/2.jpg",
+    img: "/2.webp",
+    title: "Incan Wonders",
   },
   {
-    img: "/3.jpg",
+    img: "/3.webp",
+    title: "Futebol Fever",
   },
   {
-    img: "/4.jpg",
+    img: "/4.webp",
+    title: "Gladiator's Glory",
   },
   {
-    img: "/5.jpg",
+    img: "/5.webp",
+    title: "Mafia Mayhem",
   },
   {
-    img: "/6.jpg",
+    img: "/6.webp",
+    title: "Totem Wonders",
   },
   {
-    img: "/7.jpg",
+    img: "/7.webp",
+    title: "Anubis Wrath",
   },
   {
     img: "/8.webp",
+    title: "Dragon Hatch 2",
   },
   {
     img: "/9.webp",
+    title: "Safari Wilds",
   },
   {
-    img: "/10.jpg",
+    img: "/10.webp",
+    title: "Rio Fantasia",
   },
   {
     img: "/11.webp",
+    title: "Forge of Wealth",
   },
   {
     img: "/12.webp",
+    title: "Zombie Outbreak",
   },
   {
-    img: "/13.jpg",
+    img: "/13.webp",
+    title: "Werewolf's Hunt",
   },
   {
     img: "/14.webp",
+    title: "Shark Bounty",
   },
 ];
 

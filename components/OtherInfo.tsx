@@ -18,18 +18,12 @@ const item = {
 function OtherInfo({ data }: Props) {
   return (
     <motion.div initial="hidden" animate={"visible"} className=" flex flex-col">
-      <AnimatedText
-        className=" spacing overflow-hidden text-[#D5D5D6]"
-        data={data?.location}
-      />
+   
       <AnimatedText
         className=" my-1 text-4xl font-semibold md:my-3 md:text-8xl md:leading-[100px]"
         data={data?.title}
       />
-      <AnimatedText
-        className=" text-xs text-[#D5D5D6]"
-        data={data?.description}
-      />
+ 
     </motion.div>
   );
 }
@@ -50,9 +44,9 @@ const AnimatedText = ({
         display: "inline-block",
       }}
     >
-      <motion.p className={` ${className}`} variants={item} key={data}>
+      <motion.span className={` ${className}`} variants={item} key={data}>
         {data}
-      </motion.p>
+      </motion.span>
     </span>
   );
 };
