@@ -12,7 +12,7 @@ function Header() {
       </Head>
       <div className="  flex items-center gap-2 font-medium tracking-[4px]">
         <IoIosGlobe className=" text-xl" />
-        Trust me
+        pg444th
       </div>
       <ul className=" flex flex-wrap items-center gap-3 text-[11px] md:gap-10">
         {menus.map((menu, index) => {
@@ -28,10 +28,7 @@ function Header() {
             </motion.li>
           );
         })}
-        <div className=" flex items-center gap-6">
-          <IoMdSearch className=" text-lg" />
-          <IoMdPerson className=" text-lg" />
-        </div>
+        
       </ul>
     </div>
   );
@@ -40,10 +37,9 @@ function Header() {
 export default Header;
 
 const menus = [
-  "Home",
-  "Holdidays",
-  "Destinations",
-  "Flights",
-  "Offers",
-  "Contacts",
+  "หน้าหลัก",
+  "สล็อต",
+  "บาคาร่า",
+  "เกมยิงปลา",
+  "โปรโมรชั่น",
 ];
