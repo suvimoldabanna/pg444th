@@ -73,58 +73,72 @@ const sliderData = [
   {
     img: "/1.webp",
     title: "Wings of Iguazu",
+    gameName:"https://m.pgsoft-games.com/1492288/index.html?ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&language=en-EN&__refer=m.pg-redirect.com&or=static.pgsoft-games.com",
   },
   {
     img: "/2.webp",
     title: "Incan Wonders",
+    gameName:"https://m.pgsoft-games.com/1508783/index.html?ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&language=en-EN&__refer=m.pg-redirect.com&or=static.pgsoft-games.com",
   },
   {
     img: "/3.webp",
     title: "Futebol Fever",
+    gameName:"Wings of Iguazu",
   },
   {
     img: "/4.webp",
     title: "Gladiator's Glory",
+    gameName:"Wings of Iguazu",
   },
   {
     img: "/5.webp",
     title: "Mafia Mayhem",
+    gameName:"Wings of Iguazu",
   },
   {
     img: "/6.webp",
     title: "Totem Wonders",
+    gameName:"Wings of Iguazu",
   },
   {
     img: "/7.webp",
     title: "Anubis Wrath",
+    gameName:"Wings of Iguazu",
   },
   {
     img: "/8.webp",
     title: "Dragon Hatch 2",
+    gameName:"Wings of Iguazu",
   },
   {
     img: "/9.webp",
     title: "Safari Wilds",
+    gameName:"Wings of Iguazu",
   },
   {
     img: "/10.webp",
     title: "Rio Fantasia",
+    gameName:"Wings of Iguazu",
   },
   {
     img: "/11.webp",
     title: "Forge of Wealth",
+    gameName:"Wings of Iguazu",
   },
   {
     img: "/12.webp",
     title: "Zombie Outbreak",
+    gameName:"Wings of Iguazu",
   },
   {
     img: "/13.webp",
     title: "Werewolf's Hunt",
+    gameName:"Wings of Iguazu",
   },
   {
     img: "/14.webp",
     title: "Shark Bounty",
+    gameName:"Wings of Iguazu",
   },
 ];
 
