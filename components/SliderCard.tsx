@@ -33,12 +33,14 @@ function SliderCard({ data }: Props) {
         stiffness: 100,
       }}
     >
-      <motion.img
-        layoutId={data.img}
-        alt="Transition Image"
-        src={data.img}
-        className="absolute h-full w-full rounded-2xl object-cover brightness-75"
-      />
+    <Image
+  alt="Transition Image"
+  src={data.img}
+  className="absolute h-full w-full rounded-2xl object-cover brightness-75"
+  width={500} // กำหนดขนาดตามที่ต้องการ
+  height={500} // กำหนดขนาดตามที่ต้องการ
+  priority
+/>
       <motion.div className="absolute z-10 flex h-full items-end p-4">
         <motion.div>
          {/* ปุ่ม Play */}
