@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { PlayCircleIcon } from "@heroicons/react/24/outline";
 import Modul from "./Modul"; // Import Modal ที่คุณสร้างไว้
-
+import Image from 'next/image';
 type Props = {
   data: any;
 };
