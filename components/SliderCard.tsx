@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { PlayCircleIcon } from "@heroicons/react/24/outline";
 import Modul from "./Modul"; // Import Modal ที่คุณสร้างไว้
-import Image from "next/image";
+
 type Props = {
   data: any;
 };
@@ -33,18 +33,12 @@ function SliderCard({ data }: Props) {
         stiffness: 100,
       }}
     >
-    
-
-  <motion.div layoutId={data.img}>
-  <Image
-    alt="Transition Image"
-    src={data.img}
-    width={500}
-    height={500}
-    className="absolute h-full w-full rounded-2xl object-cover brightness-75"
-    priority  // ใช้ priority เพื่อให้ภาพโหลดก่อน
-  />
-</motion.div>
+      <motion.img
+        layoutId={data.img}
+        alt="Transition Image"
+        src={data.img}
+        className="absolute h-full w-full rounded-2xl object-cover brightness-75"
+      />
       <motion.div className="absolute z-10 flex h-full items-end p-4">
         <motion.div>
          {/* ปุ่ม Play */}
