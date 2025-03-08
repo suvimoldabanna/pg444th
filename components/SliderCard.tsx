@@ -34,6 +34,7 @@ function SliderCard({ data }: Props) {
       }}
     >
     <Image
+     layoutId={data.img}   
   alt="Transition Image"
   src={data.img}
   className="absolute h-full w-full rounded-2xl object-cover brightness-75"
